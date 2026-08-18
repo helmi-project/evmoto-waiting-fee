@@ -20,6 +20,35 @@ mvn clean test
 
 Request mengikuti spesifikasi assessment: `arrivedAt`, `endedAt`, `endReason`, `pickupPoint`, dan `driverPings`.
 
+```bash
+{
+  "arrivedAt": "2026-08-10T09:00:00+07:00",
+  "endedAt": "2026-08-10T09:21:40+07:00",
+  "endReason": "CANCELLED_BY_CUSTOMER",
+  "pickupPoint": {
+    "lat": -6.21462,
+    "lng": 106.84513
+  },
+  "driverPings": [
+    {
+      "at": "2026-08-10T09:00:00+07:00",
+      "lat": -6.21462,
+      "lng": 106.84513
+    },
+    {
+      "at": "2026-08-10T09:08:00+07:00",
+      "lat": -6.21980,
+      "lng": 106.85110
+    },
+    {
+      "at": "2026-08-10T09:14:00+07:00",
+      "lat": -6.21470,
+      "lng": 106.84520
+    }
+  ]
+}
+```
+
 ## Rule
 
 - Timer mulai dari `arrivedAt`.
